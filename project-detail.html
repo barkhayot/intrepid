@@ -24,6 +24,10 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/js-year-calendar@latest/dist/js-year-calendar.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/js-year-calendar@latest/dist/js-year-calendar.min.css"/>
+    <script src="https://unpkg.com/js-year-calendar@latest/dist/js-year-calendar.umd.min.js"></script>
+    <script src="https://unpkg.com/js-year-calendar@latest/locales/js-year-calendar.fr.js"></script>
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -87,7 +91,7 @@
 
         <header class="section-header">
             <h2></h2>
-            <p>Current Projects</p>
+            <p>Project Details</p>
         </header>
 
         <div class="row gy-4">
@@ -119,111 +123,154 @@
         </div>
         <br>
         <br>
+        <hr>
+        <br>
+        <h1 id="headline">Deadline of Project</h1>
+        <div class="timeDisplay" style="position: relative;
+        width: 100%;
+        background: white;
+        text-align: center;
+        color: black;
+        font-size: 27px;
+        align-items: center;
+        justify-content: space-around;">
+         <div id="countdown" style="display: flex;" class="text-center">
+         <p class="card text-center" style="margin:3%; padding: 5% 7% 5% 7%; border-radius: 40px; border-color: black; color: #444444; border-width: 5px;"><span id="days" style="font-size:40px"> </span> Days</p>
+         <p class="card text-center" style="margin:3%; padding: 5%; border-radius: 40px; border-color: black; color: #444444; border-width: 5px;"> <span id="hours" style="font-size:40px"> </span> Hours</p>
+         <p class="card text-center" style="margin:3%; padding: 5%; border-radius: 40px; border-color: black; color: #444444; border-width: 5px;"> <span id="minutes" style="font-size:40px"> </span> Minutes</p>
+         <p class="card text-center" style="margin:3%; padding: 5%; border-radius: 40px; border-color: black; color: #444444; border-width: 5px;" > <span id="seconds" style="font-size:40px"> </span>Seconds</p>
+        </div>
+      </div>
+        
+        <br>
+        <hr>
+        <div class="progress" style="height: 50px;">
+          <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+          <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <br>
+        <h5 style="font-weight:bold; text-align: center;">Development Progress Bar</h5>
+        <hr>
+        <br>
         <div class="row gy-4">
 
             <div class="col-lg col-md" data-aos="fade-up" data-aos-delay="200">
             <div class="service-bo">
-                <svg xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 30px;" width="70" height="70" fill="currentColor" class="bi bi-activity" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z"/>
+                <svg xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 30px;" width="70" height="70" fill="currentColor" class="bi bi-code-square" viewBox="0 0 16 16">
+                    <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                    <path d="M6.854 4.646a.5.5 0 0 1 0 .708L4.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0zm2.292 0a.5.5 0 0 0 0 .708L11.793 8l-2.647 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0z"/>
                   </svg>
-                <h3>Development Process</h3>
+                <h3>Backend Development</h3>
                 <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
                 <hr>
                   <br>
                   <br>
                   <br>
-                  <div class="row gy">
 
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="service-bo">
-                        <svg xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 30px;" width="50" height="50" fill="currentColor" class="bi bi-code-square" viewBox="0 0 16 16">
-                            <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-                            <path d="M6.854 4.646a.5.5 0 0 1 0 .708L4.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0zm2.292 0a.5.5 0 0 0 0 .708L11.793 8l-2.647 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0z"/>
-                          </svg>
-                        <h3>Backend Development</h3>
-                        <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
-                          
+                  <div class="row">
+                    <div class="col-md">
+                      <div class="service-bo">
+                        <h3>TODO List for Backend </h3>
+                        <table class="table table-borderless">
+                            <thead>
+                              <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Task</th>
+                                <th scope="col">Process</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Details</th>
+                                <th scope="col">Comments</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>Build business logic</td>
+                                <td><span style="font-weight: bold;">100%</span></td>
+                                <td><svg xmlns="http://www.w3.org/2000/svg" style="color: green;" width="25" height="25" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                                  </svg></td>
+
+                                <td><span class="btn btn-sm btn-primary">Details</span></td>
+                                <td><span class="btn btn-sm btn-success">Comments</span></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>API restriction</td>
+                                <td><span style="font-weight: bold;">32%</span></td>
+                                <td><svg xmlns="http://www.w3.org/2000/svg" style="color: orange;" width="25" height="25" fill="currentColor" class="bi bi-hammer" viewBox="0 0 16 16">
+                                    <path d="M9.972 2.508a.5.5 0 0 0-.16-.556l-.178-.129a5.009 5.009 0 0 0-2.076-.783C6.215.862 4.504 1.229 2.84 3.133H1.786a.5.5 0 0 0-.354.147L.146 4.567a.5.5 0 0 0 0 .706l2.571 2.579a.5.5 0 0 0 .708 0l1.286-1.29a.5.5 0 0 0 .146-.353V5.57l8.387 8.873A.5.5 0 0 0 14 14.5l1.5-1.5a.5.5 0 0 0 .017-.689l-9.129-8.63c.747-.456 1.772-.839 3.112-.839a.5.5 0 0 0 .472-.334z"/>
+                                  </svg></td>
+                                  <td><span class="btn btn-sm btn-primary">Details</span></td>
+                                  <td><span class="btn btn-sm btn-success">Comments</span></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td>Model Building</td>
+                                <td><span style="font-weight: bold;">67%</span></td>
+                                <td><svg xmlns="http://www.w3.org/2000/svg" style="color: orange;" width="25" height="25" fill="currentColor" class="bi bi-hammer" viewBox="0 0 16 16">
+                                    <path d="M9.972 2.508a.5.5 0 0 0-.16-.556l-.178-.129a5.009 5.009 0 0 0-2.076-.783C6.215.862 4.504 1.229 2.84 3.133H1.786a.5.5 0 0 0-.354.147L.146 4.567a.5.5 0 0 0 0 .706l2.571 2.579a.5.5 0 0 0 .708 0l1.286-1.29a.5.5 0 0 0 .146-.353V5.57l8.387 8.873A.5.5 0 0 0 14 14.5l1.5-1.5a.5.5 0 0 0 .017-.689l-9.129-8.63c.747-.456 1.772-.839 3.112-.839a.5.5 0 0 0 .472-.334z"/>
+                                  </svg></td>
+                                  <td><span class="btn btn-sm btn-primary">Details</span></td>
+                                  <td><span class="btn btn-sm btn-success">Comments</span></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">4</th>
+                                <td>Testing with DB</td>
+                                <td><span style="font-weight: bold;">100%</span></td>
+                                <td><svg xmlns="http://www.w3.org/2000/svg" style="color: green;" width="25" height="25" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                                  </svg></td>
+                                  <td><span class="btn btn-sm btn-primary">Details</span></td>
+                                  <td><span class="btn btn-sm btn-success">Comments</span></td>
+                                
+                              </tr>
+                              <tr>
+                                <th scope="row">5</th>
+                                <td>Security Tiesting</td>
+                                <td><span style="font-weight: bold;">0%</span></td>
+                                <td><svg xmlns="http://www.w3.org/2000/svg" style="color: red;" width="25" height="25" fill="currentColor" class="bi bi-person-dash-fill" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M11 7.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5z"/>
+                                    <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                  </svg></td>
+                                  <td><span class="btn btn-sm btn-primary">Details</span></td>
+                                  <td><span class="btn btn-sm btn-success">Comments</span></td>
+                                
+                              </tr> 
+                              <tr>
+                                <th scope="row">6</th>
+                                <td>AI Implementation</td>
+                                <td><span style="font-weight: bold;">0%</span></td>
+                                <td><svg xmlns="http://www.w3.org/2000/svg" style="color: red;" width="25" height="25" fill="currentColor" class="bi bi-person-dash-fill" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M11 7.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5z"/>
+                                    <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                  </svg></td>
+                                  <td><span class="btn btn-sm btn-primary">Details</span></td>
+                                  <td><span class="btn btn-sm btn-success">Comments</span></td>
+                                
+                              </tr> 
+                            </tbody>
+                        </table>
+                      </div>
                     </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                        <div class="service-bo">
-                            <svg xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 30px;" width="50" height="50" fill="currentColor" class="bi bi-palette" viewBox="0 0 16 16">
-                                <path d="M8 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm4 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM5.5 7a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
-                                <path d="M16 8c0 3.15-1.866 2.585-3.567 2.07C11.42 9.763 10.465 9.473 10 10c-.603.683-.475 1.819-.351 2.92C9.826 14.495 9.996 16 8 16a8 8 0 1 1 8-8zm-8 7c.611 0 .654-.171.655-.176.078-.146.124-.464.07-1.119-.014-.168-.037-.37-.061-.591-.052-.464-.112-1.005-.118-1.462-.01-.707.083-1.61.704-2.314.369-.417.845-.578 1.272-.618.404-.038.812.026 1.16.104.343.077.702.186 1.025.284l.028.008c.346.105.658.199.953.266.653.148.904.083.991.024C14.717 9.38 15 9.161 15 8a7 7 0 1 0-7 7z"/>
-                              </svg>
-                            <h3>Frontend Development</h3>
-                            <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
-                              
-                        </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                            <div class="service-bo">
-                                <svg xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 30px;" width="50" height="50" fill="currentColor" class="bi bi-menu-button-wide-fill" viewBox="0 0 16 16">
-                                    <path d="M1.5 0A1.5 1.5 0 0 0 0 1.5v2A1.5 1.5 0 0 0 1.5 5h13A1.5 1.5 0 0 0 16 3.5v-2A1.5 1.5 0 0 0 14.5 0h-13zm1 2h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1zm9.927.427A.25.25 0 0 1 12.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0l-.396-.396zM0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V8zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2H1zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2h14zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z"/>
-                                  </svg>
-                                <h3>Database Development</h3>
-                                <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
-                                  
-                            </div>
-                            </div>
-                            <br>
-                            <br>
-                            <h3 style="text-align: center; padding-top: 100px;">Deadlines and Time Management</h3>
-                            <br>
-                            <div class="row-md" style="padding-left: 15%;padding-right: 15%; padding-top: 10%;" >
-                                <canvas id="myChart" width="200" height="200"></canvas>
-                            </div>
-                            <h3 style="text-align: center; padding-top: 100px; padding-bottom: 100px;">Development Progress</h3>
-                            <br>
-                            <br>
-                            <div class="progress" style="height: 50px;">
-                                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div>
-
-        
-                </div>
+                  </div>
             </div>
             </div>
-            
         </div>
-        <div class="row gy-4" style="margin-top: 50px;">
-    
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-bo blue">
-                <svg xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 30px;" width="40" height="40" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
-                    <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-                    <path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z"/>
-                  </svg>
-                <h4>Comment</h4>
-                <p>Latest version of UI looks perfect, Dev Team Please update new Realise ^^</p>
-            </div>
-            </div>
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                <div class="service-bo blue">
-                    <svg xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 30px;" width="40" height="40" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
-                        <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-                        <path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z"/>
-                      </svg>
-                    <h4>Comment</h4>
-                    <p>Documentation for last Update please))</p>
-                </div>
-                </div>
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="service-bo blue">
-                        <svg xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 30px;" width="40" height="40" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
-                            <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-                            <path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z"/>
-                          </svg>
-                        <h4>Comment</h4>
-                        <p>Bug was fixed on Customer page.. Make some changes </p>
-                    </div>
-                    </div>
-
         </div>
 
     </section><!-- End Services Section -->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+        <h3 style="font-weight:bold; text-align:center">Development Calendar</h3>
+        <br>
+        <div class="card d-flex align-items-center justify-content-center" style="padding: 10px;">
+          <div data-provide= "calendar" class="text-center" style="width: 70%; height:50%px; align-items: center;"></div>
+        </div>
+      </div>
+    </section>
+    
         
 </body>
 <!-- Vendor JS Files -->
@@ -237,6 +284,243 @@
 <script src="assets/js/main.js"></script>
 <script src="https://unpkg.com/gojs"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  (function () {
+  const second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
+
+  //I'm adding this section so I don't have to keep updating this pen every year :-)
+  //remove this if you don't need it
+  let today = new Date(),
+      dd = String(today.getDate()).padStart(2, "0"),
+      mm = String(today.getMonth() + 1).padStart(2, "0"),
+      yyyy = today.getFullYear(),
+      nextYear = yyyy + 1,
+      dayMonth = "09/30/",
+      birthday = dayMonth + yyyy;
+  
+  today = mm + "/" + dd + "/" + yyyy;
+  if (today > birthday) {
+    birthday = dayMonth + nextYear;
+  }
+  //end
+  
+  const countDown = new Date(birthday).getTime(),
+      x = setInterval(function() {    
+
+        const now = new Date().getTime(),
+              distance = countDown - now;
+
+        document.getElementById("days").innerText = Math.floor(distance / (day)),
+          document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+          document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+          document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+        //do something later when date is reached
+        if (distance < 0) {
+          document.getElementById("headline").innerText = "It's my birthday!";
+          document.getElementById("countdown").style.display = "none";
+          document.getElementById("content").style.display = "block";
+          clearInterval(x);
+        }
+        //seconds
+      }, 0)
+  }());
+</script>
+<script>
+   
+
+  function editEvent(event) {
+  $('#event-modal input[name="event-index"]').val(event ? event.id : '');
+  $('#event-modal input[name="event-name"]').val(event ? event.name : '');
+  $('#event-modal input[name="event-location"]').val(event ? event.location : '');
+  $('#event-modal input[name="event-start-date"]').datepicker('update', event ? event.startDate : '');
+  $('#event-modal input[name="event-end-date"]').datepicker('update', event ? event.endDate : '');
+  $('#event-modal').modal();
+}
+
+function deleteEvent(event) {
+  var dataSource = $('#calendar').data('calendar').getDataSource();
+
+  for(var i in dataSource) {
+      if(dataSource[i].id == event.id) {
+          dataSource.splice(i, 1);
+          break;
+      }
+  }
+  
+  $('#calendar').data('calendar').setDataSource(dataSource);
+}
+
+function saveEvent() {
+  var event = {
+      id: $('#event-modal input[name="event-index"]').val(),
+      name: $('#event-modal input[name="event-name"]').val(),
+      location: $('#event-modal input[name="event-location"]').val(),
+      startDate: $('#event-modal input[name="event-start-date"]').datepicker('getDate'),
+      endDate: $('#event-modal input[name="event-end-date"]').datepicker('getDate')
+  }
+  
+  var dataSource = $('#calendar').data('calendar').getDataSource();
+
+  if(event.id) {
+      for(var i in dataSource) {
+          if(dataSource[i].id == event.id) {
+              dataSource[i].name = event.name;
+              dataSource[i].location = event.location;
+              dataSource[i].startDate = event.startDate;
+              dataSource[i].endDate = event.endDate;
+          }
+      }
+  }
+  else
+  {
+      var newId = 0;
+      for(var i in dataSource) {
+          if(dataSource[i].id > newId) {
+              newId = dataSource[i].id;
+          }
+      }
+      
+      newId++;
+      event.id = newId;
+  
+      dataSource.push(event);
+  }
+  
+  $('#calendar').data('calendar').setDataSource(dataSource);
+  $('#event-modal').modal('hide');
+}
+
+$(function() {
+  var currentYear = new Date().getFullYear();
+
+  $('#calendar').calendar({
+      enableContextMenu: true,
+      enableRangeSelection: true,
+      contextMenuItems:[
+          {
+              text: 'Update',
+              click: editEvent
+          },
+          {
+              text: 'Delete',
+              click: deleteEvent
+          }
+      ],
+      selectRange: function(e) {
+          editEvent({ startDate: e.startDate, endDate: e.endDate });
+      },
+      mouseOnDay: function(e) {
+          if(e.events.length > 0) {
+              var content = '';
+              
+              for(var i in e.events) {
+                  content += '<div class="event-tooltip-content">'
+                                  + '<div class="event-name" style="color:' + e.events[i].color + '">' + e.events[i].name + '</div>'
+                                  + '<div class="event-location">' + e.events[i].location + '</div>'
+                              + '</div>';
+              }
+          
+              $(e.element).popover({
+                  trigger: 'manual',
+                  container: 'body',
+                  html:true,
+                  content: content
+              });
+              
+              $(e.element).popover('show');
+          }
+      },
+      mouseOutDay: function(e) {
+          if(e.events.length > 0) {
+              $(e.element).popover('hide');
+          }
+      },
+      dayContextMenu: function(e) {
+          $(e.element).popover('hide');
+      },
+      dataSource: [
+          {
+              id: 0,
+              name: 'Google I/O',
+              location: 'San Francisco, CA',
+              startDate: new Date(currentYear, 4, 28),
+              endDate: new Date(currentYear, 4, 29)
+          },
+          {
+              id: 1,
+              name: 'Microsoft Convergence',
+              location: 'New Orleans, LA',
+              startDate: new Date(currentYear, 2, 16),
+              endDate: new Date(currentYear, 2, 19)
+          },
+          {
+              id: 2,
+              name: 'Microsoft Build Developer Conference',
+              location: 'San Francisco, CA',
+              startDate: new Date(currentYear, 3, 29),
+              endDate: new Date(currentYear, 4, 1)
+          },
+          {
+              id: 3,
+              name: 'Apple Special Event',
+              location: 'San Francisco, CA',
+              startDate: new Date(currentYear, 8, 1),
+              endDate: new Date(currentYear, 8, 1)
+          },
+          {
+              id: 4,
+              name: 'Apple Keynote',
+              location: 'San Francisco, CA',
+              startDate: new Date(currentYear, 8, 9),
+              endDate: new Date(currentYear, 8, 9)
+          },
+          {
+              id: 5,
+              name: 'Chrome Developer Summit',
+              location: 'Mountain View, CA',
+              startDate: new Date(currentYear, 10, 17),
+              endDate: new Date(currentYear, 10, 18)
+          },
+          {
+              id: 6,
+              name: 'F8 2015',
+              location: 'San Francisco, CA',
+              startDate: new Date(currentYear, 2, 25),
+              endDate: new Date(currentYear, 2, 26)
+          },
+          {
+              id: 7,
+              name: 'Yahoo Mobile Developer Conference',
+              location: 'New York',
+              startDate: new Date(currentYear, 7, 25),
+              endDate: new Date(currentYear, 7, 26)
+          },
+          {
+              id: 8,
+              name: 'Android Developer Conference',
+              location: 'Santa Clara, CA',
+              startDate: new Date(currentYear, 11, 1),
+              endDate: new Date(currentYear, 11, 4)
+          },
+          {
+              id: 9,
+              name: 'LA Tech Summit',
+              location: 'Los Angeles, CA',
+              startDate: new Date(currentYear, 10, 17),
+              endDate: new Date(currentYear, 10, 17)
+          }
+      ]
+  });
+  
+  $('#save-event').click(function() {
+      saveEvent();
+  });
+});
+</script>
 <script>
     const ctx = document.getElementById('myChart').getContext('2d');
     const myChart = new Chart(ctx, {
