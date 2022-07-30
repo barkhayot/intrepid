@@ -3,6 +3,7 @@ from accounts .models import Account
 
 # Create your models here.
 
+# Status for Project
 class Status(models.Model):
     title       = models.CharField(max_length=100)
 

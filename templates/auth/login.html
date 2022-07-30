@@ -1,16 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Client Register</title>
-</head>
-<body>
+{% extends "base/base.html" %}
+{% block content %}
 
-    <div class="container">
-        <div class="card bg-light" style="text-align: center;">
-            <article class="card-body mx-auto" style="max-width: 400px;">
-                <h4 class="card-title mt-3 text-center">Please Login</h4>
+
+<section id="hero" class="hero d-flex align-items-center">
+    <div class="container text-center">
+      
+            <article class="card-body mx-auto" style="max-width: 400px; margin-top: -15%;">
+                <h3 style="font-weight:bold;" class="card-title mt-3 text-center">Login</h3>
                 <hr>
                 <br>
                 {% for message in messages %}
@@ -21,26 +17,25 @@
                     {% csrf_token %}
                 <div class="form-group input-group">
                     <div class="input-group-prepend"></div>
-                     <input name="email" class="form-control" placeholder="email" type="email">
+                     <input name="email" class="form-control" style="font-family: 'Nunito', 'sans-serif'" placeholder="email" type="email">
                 </div> <!-- form-group// -->
         
                 
             
                 <div class="form-group input-group">
                     <div class="input-group-prepend"></div>
-                    <input name="password" class="form-control" placeholder="password" type="password">
+                    <input name="password" class="form-control" placeholder="password" style="font-family: 'Nunito', 'sans-serif'" type="password">
                 </div> <!-- form-group// -->                                     
                 <div class="form-group">
                     <br>
-                    <button type="submit" class="btn btn-block btn-primary" style="border-radius: 50px; color: white;"> Login  </button>
+                    <button type="submit" class="btn  form-control" style=" color: white; font-weight: bold; background-color: #4154f1; font-family: 'Nunito', 'sans-serif'">Login  </button>
                 </div> <!-- form-group// -->  
                 <br>    
             </form>
         
         </article>
-        </div> <!-- card.// -->
-        </div>
         
-    
-</body>
-</html>
+        </div>
+    </section>
+        
+{% endblock %}
